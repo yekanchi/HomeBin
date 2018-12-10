@@ -1,0 +1,3 @@
+alias dotnet='dotnet.exe'
+alias ls='ls -laF --color=auto -h  --group-directories-first'
+alias rm='rm -i'

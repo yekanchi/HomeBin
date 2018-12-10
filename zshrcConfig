@@ -1,0 +1,14 @@
+#!/usr/bin/zsh
+
+ZSH_THEME="agnoster"
+
+PATH=$PATH:'/mnt/c/program files/dotnet/dotnet.exe'
+
+
+echo source ./aliases >> ~/.zshrc
+
+
+
+
+RED='\033[0;31m'
+echo -e "${RED}Zsh Manual Configuration Done!"

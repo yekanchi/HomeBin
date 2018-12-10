@@ -1,0 +1,5 @@
+#!/usr/bin/zsh
+
+sip="162.248.247.171"
+
+ssh yekanchi@$sip
