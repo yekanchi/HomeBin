@@ -3,7 +3,9 @@
 ZSH_THEME="agnoster"
 
 PATH=$PATH:'/mnt/c/program files/dotnet/dotnet.exe'
-source ~/bin/aliases 
+PATH=$PATH:"$HOME/bin"
+
+source ~/bin/aliases
 
 
 RED='\033[0;31m'
