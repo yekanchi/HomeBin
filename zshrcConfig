@@ -7,6 +7,7 @@ PATH=$PATH:"$HOME/bin"
 
 source ~/bin/aliases
 
+export sip="162.248.247.171"
 
 RED='\033[0;31m'
 echo -e "${RED}Zsh Manual Configuration Done!"
