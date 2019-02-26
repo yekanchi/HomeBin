@@ -5,4 +5,4 @@ alis rm='rm -i'
 
 
 #git aliases
-alias pgl="git log --all --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)%n''%C(bold yellow)%s%C(reset)%n''%C(dim white)- %an <%ae> %C(reset)'"
+alias pgl="git log --all --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)%n''%C(bold yellow)%s%C(reset)%n''%C(dim white)- %an <%ae> %C(reset)%n----------------------------------------------------------'"
