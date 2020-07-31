@@ -1,22 +1,30 @@
 #!/usr/bin/zsh
 
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BLUE='\u001b[34m'
+CYAN='\u001b[36m'
+YELLOW='\u001b[33m'
+
+#initial information:
+echo -e "${GREEN} CWD:" $PWD
+cd ~
+echo 'Switched Directory To Home'
+
+#zsh, oh-myzsh:
 ZSH_THEME="agnoster"
 
+#path:
 PATH=$PATH:'/mnt/c/program files/dotnet/dotnet.exe'
 PATH=$PATH:"$HOME/bin"
 
 source ~/bin/aliases
 
-export sip="162.248.247.171"
-pwd
-
+cd ~/bin
 if git status | grep -q 's'; then
-  echo "matched"
+  #echo "matched"
 fi
 
-if git status | grep -q 's'; then
-  echo "matched"
-fi
- 
-RED='\033[0;31m'
-echo -e "${RED}Zsh Manual Configuration Done!"
+clear
+cd ~
+echo -e "${GREEN}zshConfig finished!"
