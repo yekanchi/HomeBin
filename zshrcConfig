@@ -12,18 +12,33 @@ cd ~
 echo 'Switched Directory To Home'
 
 #zsh, oh-myzsh:
+export ZSH="/home/yekanchi/.oh-my-zsh"
 ZSH_THEME="agnoster"
+plugins=(git sudo)
+source $ZSH/oh-my-zsh.sh
 
 #path:
 PATH=$PATH:'/mnt/c/program files/dotnet/dotnet.exe'
 PATH=$PATH:"$HOME/bin"
-
 source ~/bin/aliases
 
 cd ~/bin
 if git status | grep -q 's'; then
   #echo "matched"
 fi
+
+prompt_end() {
+	if [[ -n $CURRENT_BG ]]; then
+		print -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
+        else
+		print -n "%{%k%}"
+	fi
+	print -n "%{%f%}"
+	CURRENT_BG=''
+	
+	#Adds the new line and ➜ as the start character.
+	printf "\n ➜";
+}
 
 clear
 cd ~
